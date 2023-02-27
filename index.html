@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="favicon-32x32.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Indie+Flower&display=swap" rel="stylesheet">
+	<title>Survey Form</title>
+</head>
+<body>
+	<h1 id="title">Pet Survey</h1>
+	<p id="description">
+		This survey will ask you some questions about pets in general 
+		to help you understand better, 
+		which kind of pet would be the perfect compagnion for you.<br>
+		Your results will be sent via email, after you've hit the submit button.<br>
+		Enjoy!
+	</p>
+
+	<form action="https://register-demo.freecodecamp.org" id="survey-form">
+		<fieldset>
+			<legend>Which characteristics should your pet have?</legend>
+
+			<div class="size">
+				<label for="small">small</label>
+				<input type="radio" id="small" value="small" name="size" required>
+				
+				<label for="medium">medium</label>
+				<input type="radio" id="medium" value="medium" name="size">
+				
+				<label for="tall">tall</label>
+				<input type="radio" id="tall" value="tall" name="size">
+			</div>	
+
+			<div class="activity-level">
+				<label for="playful">playful</label>
+				<input type="radio" id="playful"  value="playful" name="activity-level" required>
+
+				<label for="honest">honest</label>
+				<input type="radio" id="honest"  value="honest" name="activity-level">
+			</div>
+
+			<div class="activity-level">
+				<label for="playful">playful</label>
+				<input type="radio" id="playful"  value="playful" name="activity-level" required>
+				
+				<label for="honest">honest</label>
+				<input type="radio" id="honest"  value="honest" name="activity-level">
+			</div>
+
+			<div class="activity-level">
+				<label for="playful">playful</label>
+				<input type="radio" id="playful"  value="playful" name="activity-level" required>
+				
+				<label for="honest">honest</label>
+				<input type="radio" id="honest"  value="honest" name="activity-level">
+			</div>
+
+			<input type="submit" id="submit" value="Get Results!">
+		</fieldset>
+	</form>
+
+
+
+
+	<footer>
+		<em>Please note that no real user data is submitted and no emails are sent to you. This survey got created for education purposes only.</em>
+	</footer>
+</body>
+</html>

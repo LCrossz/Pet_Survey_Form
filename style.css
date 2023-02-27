@@ -1,0 +1,42 @@
+html {
+	font-size: 17px;
+	font-family: 'Comfortaa', cursive;
+	background-color: bisque;
+	color: #333333;
+}
+h1 {
+	font-size: 3em;
+	font-family: 'Indie Flower', cursive;
+}
+h1, #description {
+	text-align: center;
+}
+
+
+body {
+	max-width: 900px;
+	min-width: 430px;
+	margin: 0 auto;
+	padding: 0 60px;
+}
+form {
+	width: 80%;
+	margin: 4em auto;
+}
+fieldset div:nth-child(even) {
+	background-color: rgb(231, 204, 170);
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+	width: 100vw;
+	font-size: 13px;
+}
