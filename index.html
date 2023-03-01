@@ -1,74 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="favicon-32x32.png">
-	<link rel="stylesheet" href="style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Indie+Flower&display=swap" rel="stylesheet">
-	<title>Survey Form</title>
-</head>
-<body>
-	<h1 id="title">Pet Survey</h1>
-	<p id="description">
-		This survey will ask you some questions about pets in general 
-		to help you understand better, 
-		which kind of pet would be the perfect compagnion for you.<br>
-		Your results will be sent via email, after you've hit the submit button.<br>
-		Enjoy!
-	</p>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" href="favicon-32x32.png">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Indie+Flower&display=swap" rel="stylesheet">
+		<title>Survey Form</title>
+	</head>
+	<body>
+		<h1 id="title">Pet Survey</h1>
 
-	<form action="https://register-demo.freecodecamp.org" id="survey-form">
-		<fieldset>
-			<legend>Which characteristics should your pet have?</legend>
+		<p id="description">
+			This survey will ask you some questions about pets in general 
+			to help you understand better,
+			whether considering getting a pet would be a good idea and if so,
+			which kind of pet would be the perfect compagnion for you.<br>
+			Your results will be sent to you via email, after you've hit the submit button.<br>
+			Enjoy!
+		</p>
 
-			<div class="size">
-				<label for="small">small</label>
-				<input type="radio" id="small" value="small" name="size" required>
-				
-				<label for="medium">medium</label>
-				<input type="radio" id="medium" value="medium" name="size">
-				
-				<label for="tall">tall</label>
-				<input type="radio" id="tall" value="tall" name="size">
-			</div>	
+		<form action="https://register-demo.freecodecamp.org" id="survey-form">
+			<fieldset class="radio-inputs">
+				<legend>Which characteristics should your pet have?</legend>
 
-			<div class="activity-level">
-				<label for="playful">playful</label>
-				<input type="radio" id="playful"  value="playful" name="activity-level" required>
+				<div>
+					<label for="small">
+						<input type="radio" id="small" value="small" name="size" required>
+						small
+					</label>
+					
+					<label for="medium">
+						<input type="radio" id="medium" value="medium" name="size">
+						medium
+					</label>
+					
+					<label for="tall">
+						<input type="radio" id="tall" value="tall" name="size">
+						tall
+					</label>
 
-				<label for="honest">honest</label>
-				<input type="radio" id="honest"  value="honest" name="activity-level">
-			</div>
+					<label for="size_not_sure">
+						<input type="radio" id="size_not_sure"  value="not_sure" name="size">
+						no preference
+					</label>
+				</div>	
 
-			<div class="activity-level">
-				<label for="playful">playful</label>
-				<input type="radio" id="playful"  value="playful" name="activity-level" required>
-				
-				<label for="honest">honest</label>
-				<input type="radio" id="honest"  value="honest" name="activity-level">
-			</div>
+				<div>
+					<label for="playful">
+						<input type="radio" id="playful"  value="playful" name="mindset" required>
+						playful
+					</label>
 
-			<div class="activity-level">
-				<label for="playful">playful</label>
-				<input type="radio" id="playful"  value="playful" name="activity-level" required>
-				
-				<label for="honest">honest</label>
-				<input type="radio" id="honest"  value="honest" name="activity-level">
-			</div>
+					<label for="honest">
+						<input type="radio" id="honest"  value="honest" name="mindset">
+						honest
+					</label>
+				</div>
 
+				<div>
+					<label for="energetic">
+						<input type="radio" id="energetic"  value="energetic" name="activity-level" required>
+						energetic
+					</label>
+					
+					<label for="lazy">
+						<input type="radio" id="lazy"  value="lazy" name="activity-level">
+						lazy
+					</label>
+
+					<label for="activity_level_not_sure">
+						<input type="radio" id="activity_level_not_sure"  value="not_sure" name="activity-level">
+						no preference
+					</label>
+				</div>
+
+				<div>
+					<label for="slow">
+						<input type="radio" id="slow"  value="slow" name="speed" required>
+						slow
+					</label>
+					
+					<label for="fast">
+						<input type="radio" id="fast"  value="fast" name="speed">
+						fast
+					</label>
+				</div>
+
+				<div>
+					<label for="furry">
+						<input type="radio" id="furry"  value="furry" name="material" required>
+						fur
+					</label>
+					
+					<label for="feathery">
+						<input type="radio" id="feathery"  value="feathery" name="material">
+						feathers
+					</label>
+
+					<label for="scaly">
+						<input type="radio" id="scaly"  value="scaly" name="material">
+						scales
+					</label>
+				</div>
+
+				<div>
+					<label for="intellegent">
+						<input type="radio" id="intellegent" value="intellegent" name="iq" required>
+						intellegent
+					</label>
+					<label for="silly">
+						<input type="radio" id="silly" value="silly" name="iq">
+						silly
+					</label>
+					<label for="iq_not_sure">
+						<input type="radio" id="activity_level_not_sure"  value="not_sure" name="iq_level_not_sure">
+						no preference
+					</label>
+					
+				</div>
+
+				<div>
+					<label for="cute">
+						<input type="radio" id="cute"  value="cute" name="reputation" required>
+						cute
+					</label>
+					
+					<label for="dangerous">
+						<input type="radio" id="dangerous"  value="dangerous" name="reputation">
+						dangerous
+					</label>
+				</div>
+
+			</fieldset>
+
+			<fieldset class="checkbox-inputs">
+				<legend>Check everything you might enjoy or wouldn't mind:</legend>
+
+				<div class="checkbox-container">
+					<div>
+						<label for="long_walks">long walks
+							<input type="checkbox" value="long_walks" id="long_walks" name="preferences">
+						</label>
+			
+						<label for="aquarium_staring">staring at aquarium
+							<input type="checkbox" value="aquarium_staring" id="aquarium_staring" name="preferences">
+						</label>
+			
+						<label for="dead_mice">picking up dead mice
+							<input type="checkbox" value="dead_mice" id="dead_mice" name="preferences">
+						</label>
+			
+						<label for="echoed">someone echoing you
+							<input type="checkbox" value="echoed" id="echoed" name="preferences">
+						</label>
+			
+						<label for="long_wait">waiting a long time
+							<input type="checkbox" value="long_wait" id="long_wait" name="preferences">
+						</label>
+			
+						<label for="rare_vet">rare vet visits
+							<input type="checkbox" value="rare_vet" id="rare_vet" name="preferences">
+						</label>
+			
+						<label for="fresh_air">lots of fresh air
+							<input type="checkbox" value="fresh_air" id="fresh_air" name="preferences">
+						</label>
+					</div>
+
+					<div>
+						<label for="cuddle_time">cuddle time
+							<input type="checkbox" value="cuddle_time" id="cuddle_time" name="preferences">
+						</label>
+			
+						<label for="fractured_sleep">fractured sleep time
+							<input type="checkbox" value="fractured_sleep" id="fractured_sleep" name="preferences">
+						</label>
+			
+						<label for="loyal_guardian">a loyal guardian
+							<input type="checkbox" value="loyal_guardian" id="loyal_guardian" name="preferences">
+						</label>
+			
+						<label for="scratched_hands">scratched hands
+							<input type="checkbox" value="scratched_hands" id="scratched_hands" name="preferences">
+						</label>
+			
+						<label for="hair_everywhere">hair everywhere
+							<input type="checkbox" value="hair_everywhere" id="hair_everywhere" name="preferences">
+						</label>
+			
+						<label for="specific_smells">specific smells
+							<input type="checkbox" value="specific_smells" id="specific_smells" name="preferences">
+						</label>
+					</div>
+					
+				</div>
+			</fieldset>
+
+			<fieldset class="final-inputs">
+				<legend>Just a few more questions:</legend>
+
+				<div>
+					<label for="color_combo">What's your very favorite color combination?
+						<select name="color_combo_selection" id="color_combo" required>
+							<option value="" selected disabled="true">select one</option>
+							<option value="1">black & green</option>
+							<option value="2">black & white</option>
+							<option value="3">black & brown</option>
+							<option value="4">black & gray</option>
+							<option value="5">brown & white</option>
+							<option value="6">brown & green</option>
+							<option value="7">brown & gray</option>
+							<option value="8">white & green</option>
+							<option value="9">gray & green</option>
+							<option value="10">blue & green</option>
+						</select>
+					</label>
+		
+					<label for="budget">How much money can you spare each month?
+						<select name="budget" id="budget" required>
+							<option value="" selected disabled="true">select $$$</option>
+							<option value="1">$1</option>
+							<option value="2">$100</option>
+							<option value="3">$10,000</option>
+							<option value="4">$1,000,000</option>
+						</select>
+					</label>
+		
+					<label for="space">How much space do you have?
+						<select name="space" id="space">
+							<option value="" selected disabled="true">select your living space</option>
+							<option value="1">I live in a tree house</option>
+							<option value="2">I live in a trailer</option>
+							<option value="3">I live in a garage</option>
+							<option value="4">I live in a small apartment</option>
+							<option value="5">I live in a small house</option>
+							<option value="6">I live in a big house</option>
+							<option value="7">I live in a mansion</option>
+						</select>
+					</label>
+		
+					<label for="surroundings">How about your surroundings?
+						<select name="surroundings" id="surroundings">
+							<option value="" selected disabled="true">select your surroundings</option>
+							<option value="">underground</option>
+							<option value="">swamp area</option>
+							<option value="">desert</option>
+							<option value="">ghost town</option>
+							<option value="">small town</option>
+							<option value="">big town</option>
+						</select>
+					</label>
+				</div>
+			</fieldset>
+
+			<fieldset class="user-inputs">
+				<legend>Tell us about yourself:</legend>
+
+				<div class="user-inputs-container">
+
+					<div class="user-text">
+						<label for="motivation_text">Your motivation for getting a pet:</label>
+						<textarea 
+							placeholder="(optional) I'd love to have a pet because ..."
+							name="motivation-text" id="motivation_text" 
+							cols="25" rows="7">
+						</textarea>
+					</div>
+					
+					<div class="user-data">
+						<label for="name" id="name-label">Name: </label>
+						<input type="text" id="name" name="user_info" 
+							placeholder="min. 2 characters" minlength="2" size="15" required>
+
+						<label for="number" id="number-label">Age: </label>
+						<input type="number" id="number" name="user_info" 
+							placeholder="13" size="2" min="13" max="120" required>
+						
+						<label for="email" id="email-label">Email: </label>
+						<input type="email" id="email" name="user_info" 
+							placeholder="example@sample.com" size="17" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+							
+					</div>
+				</div>
+			</fieldset>
+			
 			<input type="submit" id="submit" value="Get Results!">
-		</fieldset>
-	</form>
+			
+			<img src="https://cdn.onlinewebfonts.com/svg/img_521087.png" alt="paw icon" class="paw_1" width="48">
+			<img src="https://cdn.onlinewebfonts.com/svg/img_521087.png" alt="paw icon" class="paw_2" width="48">
+		</form>
 
+		
 
-
-
-	<footer>
-		<em>Please note that no real user data is submitted and no emails are sent to you. This survey got created for education purposes only.</em>
-	</footer>
-</body>
+		<footer>
+			<em>Please note that no real user data is submitted and no emails are sent to you. This survey got created for education purposes only.</em>
+		</footer>
+	</body>
 </html>
